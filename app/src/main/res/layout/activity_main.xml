@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.abrilaime.clase_android.MainActivity">
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"/>
+
+    <ImageView
+        android:id="@+id/image_submit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/text_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <EditText
+        android:id="@+id/edit_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:textColorHint="@color/colorAccent"
+        android:gravity="center"
+        android:layout_below="@id/image_submit"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_Edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edad"
+        android:textColorHint="@color/colorAccent"
+        android:layout_below="@+id/edit_nombre"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edit_ciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad"
+        android:textColorHint="@color/colorAccent"
+        android:layout_below="@+id/edit_Edad"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:id="@+id/text_opcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige un icono"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/edit_ciudad"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_opcion"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/image_icon_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart_pink"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/image_icon_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart_yellow"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/image_icon_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/heart_blue"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_image"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>
